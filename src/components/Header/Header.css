@@ -1,0 +1,109 @@
+.header{
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+.navbar{
+  --bs-navbar-color: var(--color-primary);
+  --bs-navbar-hover-color: #rgba(77,181,255,0.6);
+  --bs-navbar-disabled-color: var(--color-primary);
+  --bs-navbar-active-color: var(--color-primary);
+  --bs-navbar-brand-color: var(--color-primary);
+  --bs-navbar-brand-hover-color: var(--color-primary);
+}
+.me{
+    background: linear-gradient(var(--color-primary), transparent);
+    width: 22rem;
+    height: 30rem;
+    position: absolute;
+    margin: auto;
+    margin-top: 15rem !important;
+    border-radius: 12rem 12rem 0 0;
+    overflow: hidden;
+    padding: 5rem 1.5rem 1.5rem 1.5rem;
+}
+.social {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 0.8rem;
+    position: absolute;
+    left: 10% !important;
+    bottom: 3rem;
+}
+/* .social::after{
+    content: "";
+    left: 12px;
+    width: 2px;
+    height: 2rem;
+    text-align: center;
+    background: var(--color-primary);
+} */
+.scroll{
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    right: 10%;
+    bottom: 5rem;
+    transform: rotate(90deg);
+}
+@media screen and (max-width: 450px) {
+    .social{
+        left: 0% !important;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .scroll{
+        opacity: 0;
+        visibility: hidden;
+    }
+    .intro{
+        gap: 5rem;
+    }
+    .me{
+        bottom: 0% !important;
+    }
+    .header{
+        height: 100vh !important;
+    }
+}
+@media screen and (max-width: 850px) {
+    .me{
+        background: linear-gradient(var(--color-primary), transparent);
+        width: 22rem;
+        height: 30rem;
+        position: absolute;
+        bottom: 10%;
+    }
+    .header{
+        height: 100vh !important;
+    }
+    /* .intro{
+        margin-top: 40px;
+        gap: 5rem;
+    }
+    .intro h4{
+        font-size: 4rem;
+    }
+    .intro h2{
+        font-size: 5rem;
+    }
+    .intro h6{
+        font-size: 3rem;
+    } */
+    .social{
+        left: 10% !important;
+        width: 80%;
+        visibility: visible;
+    }
+    /* .butt button{
+        font-size: 1.8rem;
+        margin-top: 20px;
+    } */
+}
+@media screen and (max-width: 1500px) {
+    .header{
+        height: auto;
+        position: relative;
+    }
+}

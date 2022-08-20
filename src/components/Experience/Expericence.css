@@ -1,0 +1,165 @@
+.Experience{
+    height: 100vh;
+}
+.ftend-skill{
+    /* box-shadow: #88bef5 5px 14px 28px, #d946ef 0px 10px 10px; */
+    border: 1px solid #1e3a8a;
+    background: linear-gradient(45deg,#60a5fa,#0369a1,transparent);
+    border-radius: 0 0 2rem 2rem;
+}
+.bkend-skill{
+    border: 1px solid none;
+    /* box-shadow: #88bef5 5px 14px 28px, #d946ef 0px 10px 10px; */
+    background: linear-gradient(45deg,#60a5fa,#0369a1,transparent);
+    border-radius: 0 0 2rem 2rem;
+}
+.title-intro{
+    border: 1px solid #1e3a8a;
+    background: #a6acec;
+    border-radius: 0 0 2rem 2rem;
+}
+.title-intro h2{
+    padding: 15px;
+}
+.skill{
+    position: relative;
+    margin: 40px;
+}
+.skill-title{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.skill-bar{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.6);
+    height: 15px;
+    z-index: -1;
+    border-radius: 100px;
+    position: absolute;
+}
+.skill-fill {
+    background: #086972;
+    height: 15px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    overflow: hidden;
+}
+.skill-percent {
+    font-size: 10px;
+}
+.html
+{
+    animation: html 2s;
+    width: 60%;
+}
+.css{
+    animation: css 2s;
+    width: 75%;
+}
+.js{
+    animation: js 2s;
+    width: 78%;
+}
+.react{
+    animation: react 2s;
+    width: 70%;
+}
+.python{
+    animation: python 2s;
+    width: 85%;
+}
+.php{
+    animation: php 2s;
+    width: 40%;
+}
+.postgre{
+    animation: postgre 2s;
+    width: 82%;
+}
+.mysql{
+    animation: mysql 2s;
+    width: 58%;
+}
+@keyframes html{
+    from{
+        width: 0;
+    }
+    to{
+        width: 60%;
+    }
+}
+@keyframes css{
+    from{
+        width: 0;
+    }
+    to{
+        width: 75%;
+    }
+}
+@keyframes js{
+    from{
+        width: 0;
+    }
+    to{
+        width: 78%;
+    }
+}
+@keyframes react{
+    from{
+        width: 0;
+    }
+    to{
+        width: 70%;
+    }
+}
+@keyframes python{
+    from{
+        width: 0;
+    }
+    to{
+        width: 85%;
+    }
+}
+@keyframes php{
+    from{
+        width: 0;
+    }
+    to{
+        width: 40%;
+    }
+}
+@keyframes postgre{
+    from{
+        width: 0;
+    }
+    to{
+        width: 82%;
+    }
+}
+@keyframes mysql{
+    from{
+        width: 0;
+    }
+    to{
+        width: 58%;
+    }
+}
+@media screen and (max-width: 450px) {
+    .Experience{
+        height: auto;
+    }
+}
+@media screen and (max-width: 820px) {
+    .Experience{
+        height: auto;
+    }
+}
+@media screen and (max-width: 1500px) {
+    .Experience{
+        height: auto;
+        position: relative;
+    }
+}
